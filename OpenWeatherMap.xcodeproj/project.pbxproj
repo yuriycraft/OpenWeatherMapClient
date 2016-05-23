@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		974DE8C9359B496494F58E43 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4BA287C3101E284C70F24B /* libPods.a */; };
 		FD2158811CEE2049006DC6C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2158801CEE2049006DC6C9 /* main.m */; };
 		FD2158841CEE2049006DC6C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2158831CEE2049006DC6C9 /* AppDelegate.m */; };
 		FD2158871CEE2049006DC6C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2158861CEE2049006DC6C9 /* ViewController.m */; };
@@ -14,20 +15,47 @@
 		FD21588D1CEE2049006DC6C9 /* OpenWeatherMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD21588B1CEE2049006DC6C9 /* OpenWeatherMap.xcdatamodeld */; };
 		FD21588F1CEE2049006DC6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD21588E1CEE2049006DC6C9 /* Assets.xcassets */; };
 		FD2158921CEE2049006DC6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2158901CEE2049006DC6C9 /* LaunchScreen.storyboard */; };
+		FD2158A31CEE2B36006DC6C9 /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2158A21CEE2B36006DC6C9 /* ServerManager.m */; };
+		FD3014D11CF314FC00A01A2D /* Forecast+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3014CE1CF314FC00A01A2D /* Forecast+CoreDataProperties.m */; };
+		FD3014D21CF314FC00A01A2D /* Forecast.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3014D01CF314FC00A01A2D /* Forecast.m */; };
+		FDC477181CF03C1A00CA4DE2 /* WeatherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC477171CF03C1A00CA4DE2 /* WeatherTableViewCell.m */; };
+		FDC4773B1CF0480900CA4DE2 /* Weather+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC477361CF0480900CA4DE2 /* Weather+CoreDataProperties.m */; };
+		FDC4773C1CF0480900CA4DE2 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC477381CF0480900CA4DE2 /* Weather.m */; };
+		FDF47F0B1CEF8D7200CB65F4 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF47F0A1CEF8D7200CB65F4 /* SearchViewController.m */; };
+		FDF47F121CEFC22300CB65F4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF47F111CEFC22300CB65F4 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52BE86D1B44CE0E853D5AA9D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5BDF2F5ACBC8AA0C240C5EB6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6F4BA287C3101E284C70F24B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD21587C1CEE2047006DC6C9 /* OpenWeatherMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeatherMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2158801CEE2049006DC6C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD2158821CEE2049006DC6C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD2158831CEE2049006DC6C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FD2158851CEE2049006DC6C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FD2158861CEE2049006DC6C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD2158851CEE2049006DC6C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = OpenWeatherMap/ViewController.h; sourceTree = "<group>"; };
+		FD2158861CEE2049006DC6C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = OpenWeatherMap/ViewController.m; sourceTree = "<group>"; };
 		FD2158891CEE2049006DC6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD21588C1CEE2049006DC6C9 /* OpenWeatherMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenWeatherMap.xcdatamodel; sourceTree = "<group>"; };
 		FD21588E1CEE2049006DC6C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD2158911CEE2049006DC6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD2158931CEE2049006DC6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2158A11CEE2B36006DC6C9 /* ServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerManager.h; sourceTree = "<group>"; };
+		FD2158A21CEE2B36006DC6C9 /* ServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerManager.m; sourceTree = "<group>"; };
+		FD3014CD1CF314FC00A01A2D /* Forecast+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Forecast+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FD3014CE1CF314FC00A01A2D /* Forecast+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Forecast+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FD3014CF1CF314FC00A01A2D /* Forecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Forecast.h; sourceTree = "<group>"; };
+		FD3014D01CF314FC00A01A2D /* Forecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Forecast.m; sourceTree = "<group>"; };
+		FDC477161CF03C1A00CA4DE2 /* WeatherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherTableViewCell.h; sourceTree = "<group>"; };
+		FDC477171CF03C1A00CA4DE2 /* WeatherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherTableViewCell.m; sourceTree = "<group>"; };
+		FDC477351CF0480900CA4DE2 /* Weather+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Weather+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FDC477361CF0480900CA4DE2 /* Weather+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Weather+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FDC477371CF0480900CA4DE2 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		FDC477381CF0480900CA4DE2 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		FDF47F091CEF8D7200CB65F4 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		FDF47F0A1CEF8D7200CB65F4 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		FDF47F101CEFC22300CB65F4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FDF47F111CEFC22300CB65F4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +63,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				974DE8C9359B496494F58E43 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		376505DCBFF8FFA094B51C0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F4BA287C3101E284C70F24B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61DC626637755753BF6674EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52BE86D1B44CE0E853D5AA9D /* Pods.debug.xcconfig */,
+				5BDF2F5ACBC8AA0C240C5EB6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FD2158731CEE2047006DC6C9 = {
 			isa = PBXGroup;
 			children = (
 				FD21587E1CEE2049006DC6C9 /* OpenWeatherMap */,
 				FD21587D1CEE2047006DC6C9 /* Products */,
+				61DC626637755753BF6674EA /* Pods */,
+				376505DCBFF8FFA094B51C0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +108,12 @@
 		FD21587E1CEE2049006DC6C9 /* OpenWeatherMap */ = {
 			isa = PBXGroup;
 			children = (
+				FDC477151CF03BF300CA4DE2 /* Views */,
+				FDF47F081CEF8D3E00CB65F4 /* Controllers */,
+				FD2158A01CEE2B18006DC6C9 /* Helpers */,
+				FD21589F1CEE2B0C006DC6C9 /* Model */,
 				FD2158821CEE2049006DC6C9 /* AppDelegate.h */,
 				FD2158831CEE2049006DC6C9 /* AppDelegate.m */,
-				FD2158851CEE2049006DC6C9 /* ViewController.h */,
-				FD2158861CEE2049006DC6C9 /* ViewController.m */,
 				FD2158881CEE2049006DC6C9 /* Main.storyboard */,
 				FD21588E1CEE2049006DC6C9 /* Assets.xcassets */,
 				FD2158901CEE2049006DC6C9 /* LaunchScreen.storyboard */,
@@ -82,6 +132,56 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FD21589F1CEE2B0C006DC6C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDC477351CF0480900CA4DE2 /* Weather+CoreDataProperties.h */,
+				FDC477361CF0480900CA4DE2 /* Weather+CoreDataProperties.m */,
+				FDC477371CF0480900CA4DE2 /* Weather.h */,
+				FDC477381CF0480900CA4DE2 /* Weather.m */,
+				FD3014CD1CF314FC00A01A2D /* Forecast+CoreDataProperties.h */,
+				FD3014CE1CF314FC00A01A2D /* Forecast+CoreDataProperties.m */,
+				FD3014CF1CF314FC00A01A2D /* Forecast.h */,
+				FD3014D01CF314FC00A01A2D /* Forecast.m */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FD2158A01CEE2B18006DC6C9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD2158A11CEE2B36006DC6C9 /* ServerManager.h */,
+				FD2158A21CEE2B36006DC6C9 /* ServerManager.m */,
+			);
+			name = Helpers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FDC477151CF03BF300CA4DE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDC477161CF03C1A00CA4DE2 /* WeatherTableViewCell.h */,
+				FDC477171CF03C1A00CA4DE2 /* WeatherTableViewCell.m */,
+			);
+			name = Views;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FDF47F081CEF8D3E00CB65F4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD2158851CEE2049006DC6C9 /* ViewController.h */,
+				FD2158861CEE2049006DC6C9 /* ViewController.m */,
+				FDF47F091CEF8D7200CB65F4 /* SearchViewController.h */,
+				FDF47F0A1CEF8D7200CB65F4 /* SearchViewController.m */,
+				FDF47F101CEFC22300CB65F4 /* DetailViewController.h */,
+				FDF47F111CEFC22300CB65F4 /* DetailViewController.m */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD2158961CEE2049006DC6C9 /* Build configuration list for PBXNativeTarget "OpenWeatherMap" */;
 			buildPhases = (
+				DAF1F118E3495A25970E51D9 /* Check Pods Manifest.lock */,
 				FD2158781CEE2047006DC6C9 /* Sources */,
 				FD2158791CEE2047006DC6C9 /* Frameworks */,
 				FD21587A1CEE2047006DC6C9 /* Resources */,
+				7B4B1B4365688D4C7715B598 /* Embed Pods Frameworks */,
+				BFAAA222640C3716A21E105D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,14 +250,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B4B1B4365688D4C7715B598 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFAAA222640C3716A21E105D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAF1F118E3495A25970E51D9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD2158781CEE2047006DC6C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD3014D21CF314FC00A01A2D /* Forecast.m in Sources */,
+				FDC4773C1CF0480900CA4DE2 /* Weather.m in Sources */,
+				FDC477181CF03C1A00CA4DE2 /* WeatherTableViewCell.m in Sources */,
 				FD2158871CEE2049006DC6C9 /* ViewController.m in Sources */,
+				FDC4773B1CF0480900CA4DE2 /* Weather+CoreDataProperties.m in Sources */,
 				FD2158841CEE2049006DC6C9 /* AppDelegate.m in Sources */,
+				FDF47F121CEFC22300CB65F4 /* DetailViewController.m in Sources */,
+				FD2158A31CEE2B36006DC6C9 /* ServerManager.m in Sources */,
 				FD2158811CEE2049006DC6C9 /* main.m in Sources */,
+				FDF47F0B1CEF8D7200CB65F4 /* SearchViewController.m in Sources */,
+				FD3014D11CF314FC00A01A2D /* Forecast+CoreDataProperties.m in Sources */,
 				FD21588D1CEE2049006DC6C9 /* OpenWeatherMap.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +424,7 @@
 		};
 		FD2158971CEE2049006DC6C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52BE86D1B44CE0E853D5AA9D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OpenWeatherMap/Info.plist;
@@ -276,6 +436,7 @@
 		};
 		FD2158981CEE2049006DC6C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BDF2F5ACBC8AA0C240C5EB6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OpenWeatherMap/Info.plist;
@@ -304,6 +465,7 @@
 				FD2158981CEE2049006DC6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

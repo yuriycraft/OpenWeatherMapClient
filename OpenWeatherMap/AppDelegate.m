@@ -6,7 +6,10 @@
 //  Copyright © 2016 YuriyCraft. All rights reserved.
 //
 
+
+
 #import "AppDelegate.h"
+#import <MagicalRecord/MagicalRecord.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +19,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Weather"];
+    
+ [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+    
     return YES;
 }
 
